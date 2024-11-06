@@ -28,10 +28,6 @@ button:hover {
 
 /* styles.css */
 
-body {
-    font-family: Arial, sans-serif;
-}
-
 .navbar {
     background-color: #333;
     overflow: hidden;
