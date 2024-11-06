@@ -3,10 +3,14 @@ body {
   color:#c6d600;
 }
 
-h1, p {
+h1 {
   font-family:Courier,Arial,Helvetica,sans-serif;
   text-align:center;
 }
+p {
+  font-family:Courier,Arial,Helvetica,sans-serif;
+  text-align:center;
+  font-weight: bold;
 button {
   background-color:black;
   color:yellow;
