@@ -5,4 +5,15 @@ body {
 
 h1 {
   font-family:Courier,Arial,Helvetica,sans-serif;
+  align:center;
+}
+button {
+  height:50px;
+  width:50px;
+  background-color:black;
+  color:yellow;
+}
+button:hover {
+  background-color:orange;
+  color:blue;
 }
