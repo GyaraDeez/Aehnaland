@@ -17,6 +17,7 @@ button:hover {
 }
 #nav {
   height:100px;
-  width:90%;
+  width:95%;
   align:center;
+  font-size:50%;
 }
