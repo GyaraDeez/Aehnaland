@@ -23,6 +23,6 @@ button:hover {
 #nav {
   height:100px;
   width:95%;
-  align:center;
+  text-align:center;
   font-size:2em;
 }
