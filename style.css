@@ -50,7 +50,8 @@ button:hover {
     left: 0;
     top: 100%;
     width: 100%;
-    transition: top 1s ease;
+    transition: top 0.3s ease, opacity 0.3s ease;
+    
 }
 
 .navbar-item a {
@@ -80,7 +81,7 @@ button:hover {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    transition: top 1s ease;
+    opacity:0;
 }
 
 .dropdown-menu a {
@@ -92,4 +93,5 @@ button:hover {
 
 .dropdown:hover .dropdown-menu {
     display: block;
+    opacity:1;
 }
