@@ -25,6 +25,22 @@ button:hover {
     background-color: orange;
     color: blue;
 }
+.gamelist {
+    color:white;
+    font-weight:bold;
+}
+.often {
+    background-color: black;
+    color:#09e116;
+}
+.rare {
+    background-color: black;
+    color:orange;
+}
+.veryrare {
+    background-color: black;
+    color:red;
+}
 
 /* Navbar styles */
 .navbar {
