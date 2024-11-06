@@ -38,7 +38,6 @@ button:hover {
     padding: 0;
     display: flex;
     justify-content: center;
-    
 }
 
 .navbar-item {
@@ -50,8 +49,6 @@ button:hover {
     left: 0;
     top: 100%;
     width: 100%;
-    transition: top 0.3s ease, opacity 0.3s ease;
-    
 }
 
 .navbar-item a {
@@ -71,7 +68,7 @@ button:hover {
 }
 
 .dropdown-menu {
-    display: none;
+    display: block;
     position: absolute;
     top: 100%;
     left: 0;
@@ -81,7 +78,9 @@ button:hover {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    opacity:0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 .dropdown-menu a {
@@ -92,6 +91,6 @@ button:hover {
 }
 
 .dropdown:hover .dropdown-menu {
-    display: block;
-    opacity:1;
+    opacity: 1;
+    visibility: visible;
 }
