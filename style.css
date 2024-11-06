@@ -23,7 +23,7 @@ button:hover {
 /* Add a black background color to the top navigation */
 .navbar {
     background-color: #333;
-    overflow: hidden;
+    overflow: visible;
 }
 
 /* styles.css */
