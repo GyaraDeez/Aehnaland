@@ -8,12 +8,15 @@ h1 {
   align:center;
 }
 button {
-  height:100px;
-  width:100px;
   background-color:black;
   color:yellow;
 }
 button:hover {
   background-color:orange;
   color:blue;
+}
+#nav {
+  height:100px;
+  width:90%;
+  align:center;
 }
