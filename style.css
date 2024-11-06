@@ -3,7 +3,7 @@ body {
   color:#c6d600;
 }
 
-h1 {
+h1, p {
   font-family:Courier,Arial,Helvetica,sans-serif;
   text-align:center;
 }
