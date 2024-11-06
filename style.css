@@ -38,6 +38,7 @@ button:hover {
     padding: 0;
     display: flex;
     justify-content: center;
+    transition: height 1s ease;
 }
 
 .navbar-item {
