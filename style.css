@@ -45,6 +45,11 @@ button:hover {
     position: relative;
     padding: 14px 20px;
 }
+.navbar-item ul {
+  left: 0; top: 100%;  /*     here               */
+  width: 100%;
+  
+}
 
 .navbar-item a {
     text-decoration: none;
