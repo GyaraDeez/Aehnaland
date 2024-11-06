@@ -80,6 +80,7 @@ button:hover {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    transition: top 1s ease;
 }
 
 .dropdown-menu a {
