@@ -18,6 +18,15 @@ p {
     color:white;
     font-weight:bold;
 }
+.often {
+    color:green;
+}
+.rare {
+    color:orange;
+}
+.veryrare {
+    color:red;
+}
 
 button {
     background-color: black;
