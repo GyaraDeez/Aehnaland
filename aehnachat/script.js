@@ -16,7 +16,7 @@ sendbtn.addEventListener('click', () => {
     }else if (user = ""){
         alert("you must have a username!");
     }
-    else if (message || user == "nigga" || message || user =="nigger") {
+    else if (message == "nigga" || user == "nigga" || message == "nigger" || user =="nigger") {
         alert ("NO RACISM BOI!");
     }
     else {
