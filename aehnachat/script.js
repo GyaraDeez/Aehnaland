@@ -1,10 +1,12 @@
 const files = require ('fs');
-message = document.getElementById("textbox");
+setuser = document.querySelector("#senduser");
 sendbtn = document.querySelector("#send");
 tb = document.getElementsByClassName("chatbox");
 userdisplay = document.getElementById("userdisplay");
 user = document.getElementById("user");
 const reader = new FileReader();
+
+setuser.addEventListener('click',()=>message = document.getElementById("textbox"));
 
 data = reader.readAsDataURL("chatlog.txt");
 tb.innerHTML(data);
