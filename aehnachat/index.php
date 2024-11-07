@@ -96,6 +96,6 @@ function loginForm(){
             </li>
         </ul>
     </nav>
-    <h1>Aehnachat/api [BETA]</h1>
+    <h1>Aehnachat/aehnachat [BETA]</h1>
 </body>
 </html>
