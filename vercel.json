@@ -1,11 +1,12 @@
 {
-    "functions": {
-      "api/**/*.php": {
-        "runtime": "vercel-php@0.7.3"
-      }
-    },
-    "routes": [
-      { "src": "../aehnachat/(.*)",  "dest": "/index.php" },
-      { "src": "../aehnachat/style.css", "dest": "/style.css" }
-    ]
-  }
+  "functions": {
+    "aehnachat/**/*.php": {
+      "runtime": "vercel-php@0.7.3"
+    }
+  },
+  "routes": [
+    { "src": "/style.css", "dest": "/aehnachat/style.css" },
+    { "src": "/script.js", "dest": "/aehnachat/script.js" },
+    { "src": "/(.*)", "dest": "/aehnachat/index.php" }
+  ]
+}

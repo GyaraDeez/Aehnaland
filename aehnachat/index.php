@@ -52,6 +52,25 @@ function loginForm(){
 }
  
 ?>
+<?php
+$request = $_SERVER['REQUEST_URI'];
+
+switch ($request) {
+    case '/style.css' :
+        header('Content-Type: text/css');
+        readfile('style.css');
+        break;
+    case '/script.js' :
+        header('Content-Type: application/javascript');
+        readfile('script.js');
+        break;
+    default:
+        // Default case for other routes
+        echo "Hello, this is the main content.";
+        break;
+}
+?>
+
  
 
 <!DOCTYPE html>
