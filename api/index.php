@@ -96,18 +96,6 @@ function loginForm(){
             </li>
         </ul>
     </nav>
-    <h1>Anorca</h1>
-    <p>Nationstate #2, Anorca. "The successor state to a former beast"<p>
-    <div style="text-align: center;">
-        <img src="../gfx/anoflag.png" alt="flag of anorca" width=225px height=150px>
-        <p>Anorca was a successor state to Undercave due to revolts (neoshitty started it grr)<br>
-        Here are some facts:<br>
-        * Capital: Archana<br>
-        * Currency: Aehna<br>
-        * Flag Meaning: Orange faction and Blue faction combating and peace is restored under a country (that also loves its wheat)<br>
-        * Founded: Sept 1 2024<br>
-        * Motto: "Kona yana yagi" -- We are one<br>
-        </p>
-    </div>
+    <h1>Aehnachat [BETA]</h1>
 </body>
 </html>
