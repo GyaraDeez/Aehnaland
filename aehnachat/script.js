@@ -1,26 +1,35 @@
-const files = require ('fs');
-setuser = document.querySelector("#senduser");
-sendbtn = document.querySelector("#send");
-tb = document.getElementsByClassName("chatbox");
-userdisplay = document.getElementById("userdisplay");
-user = document.getElementById("user");
+const files = require('fs');
+const setuser = document.querySelector("#senduser");
+const sendbtn = document.querySelector("#send");
+const tb = document.getElementsByClassName("chatbox")[0];
+const userdisplay = document.getElementById("userdisplay");
+const user = document.getElementById("user");
 const reader = new FileReader();
 
-setuser.addEventListener('click',()=>message = document.getElementById("textbox"));
+setuser.addEventListener('click', () => {
+    const message = document.getElementById("textbox").value;
+});
 
-data = reader.readAsDataURL("chatlog.txt");
-tb.innerHTML(data);
+reader.readAsDataURL("chatlog.txt");
+reader.onload = function() {
+    const data = reader.result;
+    tb.innerHTML = data;
+};
+
 sendbtn.addEventListener('click', () => {
-    if (message = ""){
-        alert("you cannot send blank messages!");
-    }else if (user = ""){
-        alert("you must have a username!");
-    }
-    else if (message == "nigga" || user == "nigga" || message == "nigger" || user =="nigger") {
-        alert ("NO RACISM BOI!");
-    }
-    else {
-        files.appendFile("chatlog.txt",user+":"+message);
-    }
+    const message = document.getElementById("textbox").value;
+    const username = user.value;
 
-})
+    if (message === "") {
+        alert("You cannot send blank messages!");
+    } else if (username === "") {
+        alert("You must have a username!");
+    } else if (message.toLowerCase().includes("n-word") || username.toLowerCase().includes("n-word")) {
+        alert("NO RACISM BOI!");
+    } else {
+        files.appendFile("chatlog.txt", `${username}: ${message}`, (err) => {
+            if (err) throw err;
+            console.log('Message saved!');
+        });
+    }
+});
