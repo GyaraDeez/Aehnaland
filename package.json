@@ -1,5 +1,0 @@
-{
-    "scripts": {
-      "build": "php build --output public"
-    }
-  }
