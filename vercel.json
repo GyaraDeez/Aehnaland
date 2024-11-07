@@ -1,11 +1,10 @@
 {
     "functions": {
-      "aehnachat/**/*.php": {
+      "api/**/*.php": {
         "runtime": "vercel-php@0.5.2"
       }
     },
     "routes": [
-      { "src": "/(.*)",  "dest": "/aehnachat/index.php" },
-      { "src": "/aehnachat/style.css", "dest": "/aehnachat/style.css" },
-      { "src": "/aehnachat/script.js", "dest": "/aehnachat/script.js" }]
+      { "src": "/(.*)",  "dest": "/index.php" },
+      { "src": "/style.css", "dest": "/style.css" }]
   }
