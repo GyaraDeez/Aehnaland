@@ -5,6 +5,7 @@
       }
     },
     "routes": [
-      { "src": "/(.*)",  "dest": "../aehnachat/index.php" },
-      { "src": "/style.css", "dest": "../aehnachat/style.css" }]
+      { "src": "../aehnachat/(.*)",  "dest": "/index.php" },
+      { "src": "../aehnachat/style.css", "dest": "/style.css" }
+    ]
   }
