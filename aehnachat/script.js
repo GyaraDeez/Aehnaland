@@ -4,13 +4,18 @@ const sendbtn = document.querySelector("#send");
 const tb = document.getElementsByClassName("chatbox")[0];
 const userdisplay = document.getElementById("userdisplay");
 const user = document.getElementById("user");
-const reader = new FileReader();
 
+// Display the username when the "User Submit" button is clicked
 setuser.addEventListener('click', () => {
     const username = user.value;
-    userdisplay.innerText = `User: ${username}`;
+    if (username) {
+        userdisplay.innerText = `User: ${username}`;
+    } else {
+        alert("You must enter a username!");
+    }
 });
 
+// Read chat log and display it in the chatbox
 fs.readFile("chatlog.txt", "utf8", (err, data) => {
     if (err) {
         console.error("Error reading file:", err);
@@ -19,6 +24,7 @@ fs.readFile("chatlog.txt", "utf8", (err, data) => {
     tb.innerHTML = data.replace(/\n/g, "<br>");
 });
 
+// Handle the "Send" button click event
 sendbtn.addEventListener('click', () => {
     const message = document.getElementById("textbox").value;
     const username = user.value;
